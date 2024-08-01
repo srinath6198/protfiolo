@@ -438,6 +438,7 @@ footer p {
 /* Email */
 
 .email-from {
+  /* margin-bottom: 100px; */
   background: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -505,23 +506,6 @@ footer p {
   outline: 2px solid #e3aa6e; /* Match your button color */
   outline-offset: 2px;
 }
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .email-from {
-    padding: 15px;
-  }
-
-  .email-from input[type="text"],
-  .email-from input[type="email"],
-  .email-from textarea,
-  .email-from button[type="submit"] {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
-
-
 
 .threads .project-img{
 height: 365px;
