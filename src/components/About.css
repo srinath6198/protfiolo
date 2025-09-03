@@ -1,0 +1,336 @@
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  padding: 80px 0;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  background: linear-gradient(135deg, #333 0%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* About Description */
+.about-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.about-description strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* About Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* About Image */
+.about-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  border: 4px solid white;
+}
+
+.about-image-bg {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border: 3px dashed #333;
+  border-radius: 25px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* Education Container */
+.education-container {
+  width: 100%;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Education Cards */
+.education-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.card-institution {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-period {
+  font-size: 0.8rem;
+  color: #666;
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.card-cgpa {
+  font-size: 0.8rem;
+  color: #333;
+  background: #e3f2fd;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+/* Scroll Arrow */
+.scroll-arrow {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.arrow-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.scroll-arrow:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about-image {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .about-image-bg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 1rem;
+  }
+  
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .about-image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .about-image-bg {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .scroll-arrow {
+    right: 1rem;
+    bottom: 1rem;
+  }
+  
+  .arrow-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .about-image-bg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .education-card {
+    padding: 1rem;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .card-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .card-description {
+    font-size: 0.85rem;
+  }
+  
+  .card-institution {
+    font-size: 0.8rem;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  
+  .card-period,
+  .card-cgpa {
+    text-align: center;
+  }
+}
