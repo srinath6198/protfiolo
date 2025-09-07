@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './Skills.css';
+import checkmark from '../assets/checkmark.png';
+import arrow from '../assets/arrow.png';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -39,17 +41,17 @@ const Skills = () => {
 
   const skillsData = {
     frontend: [
-      { name: "HTML", level: 90, icon: "/assets/checkmark.png" },
-      { name: "CSS", level: 85, icon: "/assets/checkmark.png" },
-      { name: "JavaScript", level: 88, icon: "/assets/checkmark.png" },
-      { name: "React.js", level: 85, icon: "/assets/checkmark.png" },
-      { name: "Adobe Photoshop", level: 70, icon: "/assets/checkmark.png" }
+      { name: "HTML", level: 90, icon: checkmark },
+      { name: "CSS", level: 85, icon: checkmark },
+      { name: "JavaScript", level: 88, icon: checkmark},
+      { name: "React.js", level: 85, icon: checkmark },
+      { name: "Adobe Photoshop", level: 70, icon: checkmark }
     ],
     backend: [
-      { name: "MongoDB", level: 75, icon: "/assets/checkmark.png" },
-      { name: "Node.js", level: 78, icon: "/assets/checkmark.png" },
-      { name: "Express.js", level: 80, icon: "/assets/checkmark.png" },
-      { name: "Git", level: 82, icon: "/assets/checkmark.png" }
+      { name: "MongoDB", level: 75, icon: checkmark },
+      { name: "Node.js", level: 78, icon: checkmark },
+      { name: "Express.js", level: 80, icon: checkmark },
+      { name: "Git", level: 82, icon: checkmark }
     ]
   };
 
@@ -253,7 +255,7 @@ const Skills = () => {
             }}
           >
             <motion.img
-              src="/assets/arrow.png"
+              src={arrow}
               alt="Scroll to Projects"
               className="arrow-icon"
               animate={{ y: [0, 10, 0] }}

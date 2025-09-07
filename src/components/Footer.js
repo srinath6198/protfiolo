@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Footer.css';
+import linkedin from '../assets/linkedin.png';
+import github from '../assets/github.png';
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
@@ -94,7 +96,7 @@ const Footer = () => {
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
             >
-              <img src="/assets/linkedin.png" alt="LinkedIn" className="footer-social-icon" />
+              <img src={linkedin} alt="LinkedIn" className="footer-social-icon" />
             </motion.a>
             <motion.a
               href="https://github.com/srinath6198"
@@ -103,7 +105,7 @@ const Footer = () => {
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
             >
-              <img src="/assets/github.png" alt="GitHub" className="footer-social-icon" />
+              <img src={github} alt="GitHub" className="footer-social-icon" />
             </motion.a>
           </motion.div>
         </motion.div>

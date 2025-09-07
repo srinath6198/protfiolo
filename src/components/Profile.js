@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './Profile.css';
+import profile from '../assets/srinath.jpg';
+import linkedin from '../assets/linkedin.png';
+import github from '../assets/github.png';
+import cv from '../assets/MERN Srinath.pdf';
 
 const Profile = () => {
   const [ref, inView] = useInView({
@@ -63,7 +67,7 @@ const Profile = () => {
             variants={imageVariants}
           >
             <motion.img
-              src="/assets/srinath.jpg"
+              src={profile}
               alt="Srinath M Profile"
               className="profile-image"
               whileHover={{ scale: 1.05 }}
@@ -129,7 +133,7 @@ const Profile = () => {
                 className="btn btn-primary"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.open('/assets/MERN Srinath.pdf', '_blank')}
+                onClick={() => window.open(cv, '_blank')}
               >
                 Download CV
               </motion.button>
@@ -152,7 +156,7 @@ const Profile = () => {
               variants={itemVariants}
             >
               <motion.img
-                src="/assets/linkedin.png"
+                src={linkedin}
                 alt="LinkedIn"
                 className="social-icon"
                 variants={socialVariants}
@@ -166,7 +170,7 @@ const Profile = () => {
               />
               
               <motion.img
-                src="/assets/github.png"
+                src={github}
                 alt="GitHub"
                 className="social-icon"
                 variants={socialVariants}

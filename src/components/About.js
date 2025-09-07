@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './About.css';
+import experience from '../assets/experience.png';
+import education from '../assets/education.png';
+import About1 from '../assets/About1.jpg';
+import arrow from '../assets/arrow.png';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -41,7 +45,7 @@ const About = () => {
 
   const educationData = [
     {
-      icon: "/assets/experience.png",
+      icon: experience,
       title: "Software Trainee",
       description: "Software Developer",
       institution: "Pozomind",
@@ -49,7 +53,7 @@ const About = () => {
       cgpa: "Current Role"
     },
     {
-      icon: "/assets/experience.png",
+      icon: experience,
       title: "Full-Stack Developer Intern",
       description: "MERN Stack Development Internship",
       institution: "Innovaskill Technologies",
@@ -57,7 +61,7 @@ const About = () => {
       cgpa: "Completed"
     },
     {
-      icon: "/assets/experience.png",
+      icon: experience,
       title: "MERN Full Stack Course",
       description: "Full Stack Development using MERN Stack",
       institution: "Innovaskill Technologies",
@@ -65,7 +69,7 @@ const About = () => {
       cgpa: "Completed"
     },
     {
-      icon: "/assets/education.png",
+      icon: education,
       title: "Bachelor of Engineering",
       description: "Computer Science and Engineering",
       institution: "Adhiyamaan College of Engineering",
@@ -73,7 +77,7 @@ const About = () => {
       cgpa: "7.8 CGPA"
     },
     {
-      icon: "/assets/education.png",
+      icon: education,
       title: "Diploma",
       description: "Computer Science and Engineering",
       institution: "Er. Perumal Manimekalai Polytechnic College",
@@ -135,7 +139,7 @@ const About = () => {
               variants={imageVariants}
             >
               <motion.img
-                src="/assets/About1.jpg"
+                src={About1}
                 alt="About Srinath"
                 className="about-image"
                 whileHover={{ scale: 1.05 }}
@@ -203,7 +207,7 @@ const About = () => {
             }}
           >
             <motion.img
-              src="/assets/arrow.png"
+              src={arrow}
               alt="Scroll to Skills"
               className="arrow-icon"
               animate={{ y: [0, 10, 0] }}

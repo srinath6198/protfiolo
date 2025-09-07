@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './Contact.css';
+import email from '../assets/email.png';
+import linkedin from '../assets/linkedin.png';
+import whatsapp from '../assets/whatsapp.png';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -59,21 +62,21 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: "/assets/email.png",
+      icon: email,
       label: "Email",
       value: "msrinath6109@gmail.com",
       link: "mailto:msrinath6109@gmail.com",
       color: "#007bff"
     },
     {
-      icon: "/assets/linkedin.png",
+      icon: linkedin,
       label: "LinkedIn",
       value: "LinkedIn Profile",
       link: "https://www.linkedin.com/in/srinath-m-39a64817a/",
       color: "#0077b5"
     },
     {
-      icon: "/assets/whatsapp.png",
+      icon: whatsapp,
       label: "WhatsApp",
       value: "+91 8523922562",
       link: "https://wa.me/918523922562",

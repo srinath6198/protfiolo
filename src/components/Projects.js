@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './Projects.css';
+import project from '../assets/project-1.png';
+import project2 from '../assets/project-2.png';
+import project3 from '../assets/project-3.png';
+import arrow from '../assets/arrow.png';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -34,7 +38,7 @@ const Projects = () => {
       id: 1,
       title: "Pozo - Web Development Company",
       description: "A professional web development company website showcasing services, portfolio, and company information. Built with modern web technologies and responsive design.",
-      image: "/assets/project-1.png",
+      image: project,
       technologies: ["React", "Node.js", "MongoDB", "Express", "Responsive Design"],
       github: "https://github.com/srinath6198",
       liveDemo: "https://www.pozo.dev/home/",
@@ -44,7 +48,7 @@ const Projects = () => {
       id: 2,
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce application built with MERN stack, featuring user authentication, product management, shopping cart, and payment integration.",
-      image: "/assets/project-2.jpg",
+      image:project2,
       technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
       github: "https://github.com/srinath6198",
       liveDemo: "https://srinathe-commerce.netlify.app",
@@ -54,7 +58,7 @@ const Projects = () => {
       id: 3,
       title: "Social Media App (Threads Clone)",
       description: "A social media application inspired by Threads, built with modern web technologies. Features include user profiles, posts, likes, and real-time updates.",
-      image: "/assets/project-3.png",
+      image:project3,
       technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
       github: "https://github.com/srinath6198",
       liveDemo: "https://threads-ao0j.onrender.com",
@@ -64,7 +68,7 @@ const Projects = () => {
       id: 4,
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with React and Framer Motion, featuring smooth animations, interactive elements, and a professional design.",
-      image: "/assets/project-2.png",
+      image: project2,
       technologies: ["React", "Framer Motion", "CSS3", "JavaScript", "Responsive Design"],
       github: "https://github.com/srinath6198",
       liveDemo: "#",
@@ -225,7 +229,7 @@ const Projects = () => {
             }}
           >
             <motion.img
-              src="/assets/arrow.png"
+              src={arrow}
               alt="Scroll to Contact"
               className="arrow-icon"
               animate={{ y: [0, 10, 0] }}
